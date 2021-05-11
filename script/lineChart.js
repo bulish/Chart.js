@@ -81,14 +81,26 @@ function newLegend(chart) {
 }
 
 function update(chart) {
-	
 	var dataY = document.querySelectorAll(".dataY");
-	var dataLength = chart.data.datasets[0].data;
-	chart.data.datasets[0].data.push((dataY[dataY.length - 2]).value);
-	console.log(dataLength);
-
 	var dataX = document.querySelectorAll('.dataX');
-	console.log(dataX.length);
-	chart.data.labels.push((dataX[dataX.length - 2]).value);
+	console.log(dataY.length + " data length");
+	if(dataY.length != 1){
+		if (dataY[dataY.length - 2].value != "" && dataY[dataY.length - 2].value != "Y VALUE" && dataX[dataX.length - 2].value != "" && dataX[dataX.length - 2].value != "X VALUE"){
+			chart.data.datasets[0].data.push((dataY[dataY.length - 2]).value);
+			chart.data.labels.push((dataX[dataX.length - 2]).value);
+		} else {
+			dataY[dataY.length - 2].value = 'Y VALUE';
+			dataX[dataX.length - 2].value = 'X VALUE';
+		}
+	} else {
+		if (dataY[dataY.length - 1].value != "" && dataY[dataY.length - 1].value != "Y VALUE" && dataX[dataX.length - 1].value != "" && dataX[dataX.length - 1].value != "X VALUE"){
+			chart.data.datasets[0].data.push((dataY[dataY.length - 1]).value);
+			chart.data.labels.push((dataX[dataX.length - 1]).value);
+		} else {
+			dataY[dataY.length - 1].value = 'Y VALUE';
+			dataX[dataX.length - 1].value = 'X VALUE';
+		}
+	}
+
 	window.myLine.update();
 }

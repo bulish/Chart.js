@@ -2,6 +2,7 @@
     display: none;
     color: white;
     padding: 2rem;
+    background-color: rgb(179, 119, 9);
     .btn2 {
         top: 1rem;
         left: 2rem;
@@ -46,5 +47,36 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    input {
+        width: 8rem !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    input {
+        width: 12rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    input {
+        width: 8rem !important;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .data {
+        margin-left: -1rem !important;
+    }
+    td {
+        width: 4rem !important;
+        font-size: 0.9rem !important;
+    }
+    input {
+        width: 6rem !important;
     }
 }

@@ -1,6 +1,7 @@
 #title {
     position: relative;
     overflow: hidden !important;
+    background-color: rgb(22, 21, 21);
     .container-fluid{
         min-height: 100vh;
         color: white;
@@ -9,6 +10,7 @@
             .title {
                 font-family: 'Original Surfer', cursive;
                 font-size: 4rem;
+                color: rgb(238, 231, 217);
             }
             .title__text {
             font-size: 1.1rem;
@@ -16,28 +18,13 @@
             .title__btn {
                 font-size: 1.2rem;
                 border-radius: 0.6rem;
-                border: 2px solid rgb(93, 207, 169);
+                border: 2px solid rgb(233, 167, 44);
                 outline: none;
-            }
-            .btn1 {
                 color: white;
-                background-color: rgb(93, 207, 169);
-                &:hover {
-                    background-color: rgb(47, 141, 110);
-                    border: 2px solid rgb(47, 141, 110);
-                }
-            }
-            .btn2 {
-                color: rgb(93, 207, 169);
-                background-color: transparent;
-                &:hover {
-                    color: white;
-                    border: 2px solid white;
-                }
-            }
+                background-color: rgb(233, 167, 44);
+            }}
         }
     }
-}
 
 @media only screen and (max-width: 490px) {
       .title {

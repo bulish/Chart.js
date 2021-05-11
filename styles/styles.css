@@ -14,8 +14,6 @@ body {
   overflow-x: hidden;
   width: 100vw;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(#101f53), to(#eff1f3));
-  background: linear-gradient(to right, #101f53, #eff1f3);
 }
 
 section {
@@ -28,6 +26,7 @@ section {
 #title {
   position: relative;
   overflow: hidden !important;
+  background-color: #161515;
 }
 
 #title .container-fluid {
@@ -42,6 +41,7 @@ section {
 #title .container-fluid .row .title {
   font-family: 'Original Surfer', cursive;
   font-size: 4rem;
+  color: #eee7d9;
 }
 
 #title .container-fluid .row .title__text {
@@ -51,28 +51,10 @@ section {
 #title .container-fluid .row .title__btn {
   font-size: 1.2rem;
   border-radius: 0.6rem;
-  border: 2px solid #5dcfa9;
+  border: 2px solid #e9a72c;
   outline: none;
-}
-
-#title .container-fluid .row .btn1 {
   color: white;
-  background-color: #5dcfa9;
-}
-
-#title .container-fluid .row .btn1:hover {
-  background-color: #2f8d6e;
-  border: 2px solid #2f8d6e;
-}
-
-#title .container-fluid .row .btn2 {
-  color: #5dcfa9;
-  background-color: transparent;
-}
-
-#title .container-fluid .row .btn2:hover {
-  color: white;
-  border: 2px solid white;
+  background-color: #e9a72c;
 }
 
 @media only screen and (max-width: 490px) {
@@ -88,6 +70,7 @@ section {
   display: none;
   color: white;
   padding: 2rem;
+  background-color: #b37709;
 }
 
 #chart .btn2 {
@@ -142,5 +125,36 @@ section {
   line-height: 2rem;
   padding-left: 1.25rem;
   color: #158a15;
+}
+
+@media only screen and (max-width: 1200px) {
+  input {
+    width: 8rem !important;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  input {
+    width: 12rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 8rem !important;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .data {
+    margin-left: -1rem !important;
+  }
+  td {
+    width: 4rem !important;
+    font-size: 0.9rem !important;
+  }
+  input {
+    width: 6rem !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

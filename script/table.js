@@ -146,36 +146,38 @@ function newData(event){
             }
         });
     }
-};
 
-// function deleteData (event){
-//     var trArray = [];
-// 	var timesArray = [];
-// 	var times = document.querySelectorAll('.fa-times-circle');
-// 	var tr = document.querySelectorAll('tr');
-// 	for (let i = 0; i < times.length; i++) {
-// 		timesArray.push(times[i]);
-// 	}
-//     console.log(tr.length + " tr length");
-// 	for (let i = 0; i < tr.length - 2; i++) {
-// 		trArray.push(tr[i + 2]);
-// 		console.log(tr.length);
-// 	}
-// 	var indexOfIcon = timesArray.indexOf(event.target);
-//     console.log("before " + trArray.length);
-// 	const filter = trArray.filter(
-//         tr => trArray.indexOf(tr) !== indexOfIcon,
-//         );
-//         console.log(filter);
-//         console.log("after " + filter.length);
-//     var length = trArray.length;
-    
-//     for (let i = 0; i < length; i++){
-//         if (filter.indexOf(trArray[i]) == -1){
-//             trArray[i].style.display = 'none';
-//             console.log(trArray.length + " trArray before");
-//             trArray = trArray.slice(0, trArray[i]) + trArray.slice(trArray[i], trArray.length-1);
-//             console.log(trArray.length + " trArray after");
-//         }
-//     }
-// }
+    function deleteData(event) {
+		var trArray = [];
+		var timesArray = [];
+		var times = document.querySelectorAll('.fa-times-circle');
+		var tr = document.querySelectorAll('tr');
+
+		for (let i = 0; i < times.length; i++) {
+			timesArray.push(times[i]);
+		}
+		console.log(tr.length + ' tr length');
+        console.log(timesArray.length + " times array");
+
+		for (let i = 0; i < tr.length - 2; i++) {
+			trArray.push(tr[i + 2]);
+			console.log(tr.length);
+		}
+
+		var indexOfIcon = timesArray.indexOf(event.target);
+		var length = trArray.length;
+
+	// 	for (let i = 0; i < length; i++) {
+	// 		if (filter.indexOf(trArray[i]) == -1) {
+	// 			trArray[i].style.display = 'none';
+	// 			console.log(trArray.length + ' trArray before');
+	// 			trArray =
+	// 				trArray.slice(0, trArray[i]) +
+	// 				trArray.slice(trArray[i], trArray.length - 1);
+	// 			console.log(trArray.length + ' trArray after');
+	// 		}
+	// 	}
+    }
+    //timesIcons[timesIcons.length - 1].addEventListener("click", deleteData(event));
+    event.target.addEventListener("click", deleteData(event));
+};
