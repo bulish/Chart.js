@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(16, 31, 83),rgb(239, 241, 243));
+}
+
+section {
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@import "./title";
+@import "./chart";

@@ -1,0 +1,49 @@
+#title {
+    position: relative;
+    overflow: hidden !important;
+    .container-fluid{
+        min-height: 100vh;
+        color: white;
+        .row {
+            min-height: 100vh;
+            .title {
+                font-family: 'Original Surfer', cursive;
+                font-size: 4rem;
+            }
+            .title__text {
+            font-size: 1.1rem;
+            }
+            .title__btn {
+                font-size: 1.2rem;
+                border-radius: 0.6rem;
+                border: 2px solid rgb(93, 207, 169);
+                outline: none;
+            }
+            .btn1 {
+                color: white;
+                background-color: rgb(93, 207, 169);
+                &:hover {
+                    background-color: rgb(47, 141, 110);
+                    border: 2px solid rgb(47, 141, 110);
+                }
+            }
+            .btn2 {
+                color: rgb(93, 207, 169);
+                background-color: transparent;
+                &:hover {
+                    color: white;
+                    border: 2px solid white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+      .title {
+        font-size: 3rem !important;
+    }
+        .title__btn {
+        font-size: 1rem !important;
+    }
+}

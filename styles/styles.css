@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#101f53), to(#eff1f3));
+  background: linear-gradient(to right, #101f53, #eff1f3);
+}
+
+section {
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+#title {
+  position: relative;
+  overflow: hidden !important;
+}
+
+#title .container-fluid {
+  min-height: 100vh;
+  color: white;
+}
+
+#title .container-fluid .row {
+  min-height: 100vh;
+}
+
+#title .container-fluid .row .title {
+  font-family: 'Original Surfer', cursive;
+  font-size: 4rem;
+}
+
+#title .container-fluid .row .title__text {
+  font-size: 1.1rem;
+}
+
+#title .container-fluid .row .title__btn {
+  font-size: 1.2rem;
+  border-radius: 0.6rem;
+  border: 2px solid #5dcfa9;
+  outline: none;
+}
+
+#title .container-fluid .row .btn1 {
+  color: white;
+  background-color: #5dcfa9;
+}
+
+#title .container-fluid .row .btn1:hover {
+  background-color: #2f8d6e;
+  border: 2px solid #2f8d6e;
+}
+
+#title .container-fluid .row .btn2 {
+  color: #5dcfa9;
+  background-color: transparent;
+}
+
+#title .container-fluid .row .btn2:hover {
+  color: white;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 490px) {
+  .title {
+    font-size: 3rem !important;
+  }
+  .title__btn {
+    font-size: 1rem !important;
+  }
+}
+
+#chart {
+  display: none;
+  color: white;
+  padding: 2rem;
+}
+
+#chart .btn2 {
+  top: 1rem;
+  left: 2rem;
+  color: white;
+  font-size: 2rem;
+  z-index: 9;
+}
+
+#chart .container-fluid {
+  min-height: 90vh;
+}
+
+#chart .container-fluid .row {
+  min-height: 90vh;
+}
+
+#chart .container-fluid .row .data .data__title {
+  color: white;
+  font-size: 2rem;
+  width: 100%;
+  font-family: 'Original Surfer', cursive;
+  margin-bottom: 2.25rem;
+}
+
+#chart .container-fluid .row .data table {
+  width: 100%;
+}
+
+#chart .container-fluid .row .data table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#chart .container-fluid .row .data table tr td {
+  width: 6rem;
+  line-height: 2rem;
+  font-size: 1.25rem;
+}
+
+#chart .container-fluid .row .data table tr input {
+  padding: .2rem;
+  outline: none;
+  height: 2rem;
+  width: 12rem;
+}
+
+#chart .container-fluid .row .data table tr i {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-left: 1.25rem;
+  color: #158a15;
+}
+/*# sourceMappingURL=styles.css.map */

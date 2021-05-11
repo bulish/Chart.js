@@ -1,0 +1,50 @@
+#chart{
+    display: none;
+    color: white;
+    padding: 2rem;
+    .btn2 {
+        top: 1rem;
+        left: 2rem;
+        color: white;
+        font-size: 2rem;
+        z-index: 9;
+    }
+    .container-fluid {
+        min-height: 90vh;
+        .row {
+            min-height: 90vh;
+            .data {
+                .data__title{
+                    color: white;
+                    font-size: 2rem;
+                    width: 100%;
+                    font-family: 'Original Surfer', cursive;
+                    margin-bottom: 2.25rem;
+                    }
+                table{
+                    width: 100%;
+                    tr{
+                        display: flex;
+                        td {
+                            width: 6rem;
+                            line-height: 2rem;
+                            font-size: 1.25rem;
+                        }
+                        input {
+                            padding: .2rem;
+                            outline: none;
+                            height: 2rem;
+                            width: 12rem;
+                        }
+                        i {
+                            font-size: 1.5rem;
+                            line-height: 2rem;
+                            padding-left: 1.25rem;
+                            color: rgb(21, 138, 21);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
